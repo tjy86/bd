@@ -8,10 +8,9 @@ html
         = javascript_include_tag "application"
         = csrf_meta_tags
   body
-    header.navbar.navbar-fixed-top
-      nav.navbar-inner
-        .container
-          = render 'layouts/navigation'
+    header
+      .container
+        = render 'layouts/navigation'
     main role="main"
       .container
         .content
