@@ -1,7 +1,6 @@
-ul.nav
-  li= link_to 'Home', root_path
-  li= link_to 'About', page_path('about')
-
+/ ul.nav
+  / li= link_to 'Home', root_path
+  / li= link_to 'About', page_path('about')
 /! NAVBAR
 .navbar-wrapper
   .container
@@ -15,23 +14,37 @@ ul.nav
         </button>
         <a class="brand" href="#">Bian Dang NYC</a>
         <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="nav-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        .nav-collapse.collapse
+          ul.nav
+            = nav_link "Menu", root_path
+            = nav_link "Story", story_path
+            li
+              = link_to "Story", story_path
+            li
+              a href="/" Schedule
+            li
+              a href="/" Gallery
+            li
+              a href="/" Shop
+            li
+              a href="/" Catering & Events
+            li
+              a href="/" Contact
+            li.dropdown
+              a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt <b class="caret"></b>
+              ul.dropdown-menu
+                li.nav-header Corporate
+                li
+                  a href="/" LUCKmgmt
+                li.divider
+                li.nav-header Concepts
+                li
+                  a href="/" Moo Shu Grill
+                li
+                  a href="/" Domo Taco
+                li
+                  a href="/" Fishing Shrimp
+                li.divider
+                li.nav-header Venues
+                li
+                  a href="/" DUMBO Lot
