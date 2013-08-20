@@ -24,15 +24,3 @@
 }
 // import original bootstrap
 @import "twitter/bootstrap";
-
-.navbar{
-  min-width: 200px;
-  margin: auto;
-  background-color:#fff;
-  li{
-    font-weight: bold;
-  }
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: purple;
-  background-color: #fff; }

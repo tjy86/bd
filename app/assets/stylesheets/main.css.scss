@@ -5,17 +5,43 @@ $purple: #61004D;
 }
 #bd-logo{
   float: left;
-  height: 220px;
+}
+#bd-small{
+  display: block;
 }
 
-ul.nav.navbar-nav ul{
-  text-align: center;
+.navbar-large{
+  width: 800px;
   margin: auto;
+}
+
+nav{
   li{
-  margin-top: 50px;
+    list-style-type: none;
+  }
+  .nav-li{
+    float: left;
+    padding: 20px 10px;
+    list-style-type: none;
+    font-weight: bold;
+    display: block;
+    border: 1px #000 dashed;
+  }
+  .nav-li-small{
+    text-align: center;
+    padding: 10px 10px;
+    list-style-type: none;
+    font-weight: bold;
+    display: block;
+    border: 1px #000 dashed;
+  }
+  a{
+    text-align: center;
+    display: block;
   }
 }
 
-.container1{
-  margin:auto;
-}
+@media(min-width:688px){.navbar-large{display:block}}
+@media(max-width:688px){.navbar-large{display:none}}
+@media(min-width:688px){.navbar-small{display:none}}
+@media(max-width:688px){.navbar-small{display:block}}
