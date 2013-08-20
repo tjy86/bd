@@ -1,5 +1,5 @@
 $purple: #61004D;
-
+// Nav
 .clearfix{
   clear: both;
 }
@@ -45,3 +45,10 @@ nav{
 @media(max-width:688px){.navbar-large{display:none}}
 @media(min-width:688px){.navbar-small{display:none}}
 @media(max-width:688px){.navbar-small{display:block}}
+
+//menu
+
+.panel-default .panel-heading{
+  background-color: $purple;
+  color: #eee;
+}

@@ -1,39 +1,4 @@
-/! Carousel
-<div id="myCarousel" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="https://www.filepicker.io/api/file/CaYRxaczSxOAJcIeqhUW" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Meet Diana!</h1>
-          <p class="lead">Diana is Awesome!
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash4/4844_118617401536_4339197_n.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Meet Thomas!</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <a class="btn btn-large btn-primary" href="#">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://getbootstrap.com/2.3.2/assets/img/examples/slide-03.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div><!-- /.carousel -->
+= render 'carousel'
 
 .row
   .col-md-5.col-md-offset-1
@@ -68,39 +33,25 @@
     .panel.panel-default
       .panel-heading
         h1 Sides
-      ul.list-group
-        li.list-group-item
-          | Steamed Pork Dumplings
-          p.pull-right $3
-          p
-          | Four (4) pieces of delicous pork dumplings.
-        li.list-group-item
-          | Mini Pork Buns
-          p.pull-right $3
-          p
-          | Three (3) pieces of delicious mini pork buns.
-        li.list-group-item
-          | Zong-zi (Chinese Tamale)
-          p.pull-right $4
-          p
-          | Glutinous rice, pork belly, Chinese sausage, peanuts, dried shrimp, green beans, radish, mushroom and Szechuan vegetables wrapped in bamboo leaves. PSA: Do not eat bamboo leaves unless you are a panda.
-        li.list-group-item
-          | Vegetarian Zong-zi
-          p.pull-right $4
-          p
-          | Glutinous rice, peanuts, green beans, radish, mushroom and Szechuan vegetables wrapped in bamboo leaves. PSA: Do not eat bamboo leaves unless you are a panda.
-        li.list-group-item
-          | Buddha's Delight
-          p.pull-right $3
-          p
-          | Tofu, bean curd, bamboo shoots, mushrooms and woodear stir-fried in a special blend of savory sauce, served cold.
-        li.list-group-item
-          | Dried Anchovies & Peanuts
-          p.pull-right $3
-          p
-          | Dried anchovies and peanuts stir-fried, served cold.
-        li.list-group-item
-          | Tea Egg
-          p.pull-right $1
-          p
-          | Hard boiled egg infused with tea leaves, soy sauce, and spices.
+      .panel-body
+        h4 Steamed Pork Dumplings
+        h4.pull-right $3
+        h5 Four (4) pieces of delicous pork dumplings.
+        h4 Mini Pork Buns
+        h4.pull-right $3
+        h5 Three (3) pieces of delicious mini pork buns.
+        h4 Zong-zi (Chinese Tamale)
+        h4.pull-right $4
+        h5 Glutinous rice, pork belly, Chinese sausage, peanuts, dried shrimp, green beans, radish, mushroom and Szechuan vegetables wrapped in bamboo leaves. PSA: Do not eat bamboo leaves unless you are a panda.
+        h4 Vegetarian Zong-zi
+        h4.pull-right $4
+        h5 Glutinous rice, peanuts, green beans, radish, mushroom and Szechuan vegetables wrapped in bamboo leaves. PSA: Do not eat bamboo leaves unless you are a panda.
+        h4 Buddha's Delight
+        h4.pull-right $3
+        h5 Tofu, bean curd, bamboo shoots, mushrooms and woodear stir-fried in a special blend of savory sauce, served cold.
+        h4 Dried Anchovies & Peanuts
+        h4.pull-right $3
+        h5 Dried anchovies and peanuts stir-fried, served cold.
+        h4 Tea Egg
+        h4.pull-right $1
+        h5 Hard boiled egg infused with tea leaves, soy sauce, and spices.
