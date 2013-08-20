@@ -1,50 +1,40 @@
-/ ul.nav
-  / li= link_to 'Home', root_path
-  / li= link_to 'About', page_path('about')
-/! NAVBAR
 .navbar-wrapper
   .container
-    .navbar.navbar-inverse
-      .navbar-inner
-        <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+    img.img-responsive#bd-logo src='http://tyang.1.ai/images/bian-dang-logo.png' alt='Bian Dang NYC'
+    .navbar.navbar-default role='navigation'
+      .navbar-header
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="#">Bian Dang NYC</a>
+        <a class="navbar-brand" href="#"></a>
         <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-        .nav-collapse.collapse
-          ul.nav
-            = nav_link "Menu", root_path
-            = nav_link "Story", story_path
-            li
-              = link_to "Story", story_path
-            li
-              a href="/" Schedule
-            li
-              a href="/" Gallery
-            li
-              a href="/" Shop
-            li
-              a href="/" Catering & Events
-            li
-              a href="/" Contact
-            li.dropdown
-              a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt <b class="caret"></b>
-              ul.dropdown-menu
-                li.nav-header Corporate
-                li
-                  a href="/" LUCKmgmt
-                li.divider
-                li.nav-header Concepts
-                li
-                  a href="/" Moo Shu Grill
-                li
-                  a href="/" Domo Taco
-                li
-                  a href="/" Fishing Shrimp
-                li.divider
-                li.nav-header Venues
-                li
-                  a href="/" DUMBO Lot
+      .navbar-collapse.collapse.navbar-ex1-collapse
+        ul.nav.navbar-nav
+          = nav_link "Menu", root_path
+          = nav_link "Story", story_path
+          = nav_link "Schedule", schedule_path
+          = nav_link "Gallery", schedule_path
+          = nav_link "Shop", schedule_path
+          = nav_link "Catering & Events", schedule_path
+          = nav_link "Contact", schedule_path
+          li.dropdown
+            a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt<b class="caret"></b>
+            ul.dropdown-menu
+              li.dropdown-header Corporate
+              li
+                a href="/" LUCKmgmt
+              li.divider
+              li.dropdown-header Concepts
+              li
+                a href="/" Moo Shu Grill
+              li
+                a href="/" Domo Taco
+              li
+                a href="/" Fishing Shrimp
+              li.divider
+              li.dropdown-header Venues
+              li
+                a href="/" DUMBO Lot

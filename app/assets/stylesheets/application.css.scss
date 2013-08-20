@@ -22,3 +22,27 @@
  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
  box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
+// import original bootstrap
+@import "twitter/bootstrap";
+
+.clearfix{
+  clear: both;
+}
+body{
+  margin-top: 93px;
+}
+#bd-logo{
+  float: left;
+  height: 220px;
+}
+.navbar{
+  float: left;
+  margin-top: 50px;
+  background-color:#fff;
+  li{
+    font-weight: bold;
+  }
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: purple;
+  background-color: #fff; }
