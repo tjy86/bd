@@ -25,19 +25,9 @@
 // import original bootstrap
 @import "twitter/bootstrap";
 
-.clearfix{
-  clear: both;
-}
-body{
-  margin-top: 93px;
-}
-#bd-logo{
-  float: left;
-  height: 220px;
-}
 .navbar{
-  float: left;
-  margin-top: 50px;
+  min-width: 200px;
+  margin: auto;
   background-color:#fff;
   li{
     font-weight: bold;
