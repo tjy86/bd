@@ -12,12 +12,14 @@ html
       = render 'layouts/navigation'
       .clearfix
     main role="main"
+      = render 'carousel'
       = render 'layouts/messages'
-      = yield
-      footer
-        p.pull-right
-          <a href="#">Back to top</a>
-    <p>&copy; 2013 Luck Management Corp. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      .container
+        = yield
+        footer
+          span.pull-right
+            <a href="#">Back to top</a>
+          span &copy; 2013 Luck Management Corp.</p>
 javascript:
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

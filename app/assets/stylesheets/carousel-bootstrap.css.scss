@@ -8,7 +8,7 @@ $purple: #61004D;
 }
 
 .carousel {
-  max-width: 960px;
+  max-width: 800px;
   margin: auto;
   margin-bottom: 60px;
 }
@@ -18,26 +18,12 @@ $purple: #61004D;
   z-index: 9;
 }
 .carousel .item {
-  height: 500px;
+  height: 450px;
 }
 .carousel img {
   min-width: 100%;
 }
 
-.carousel-caption {
-  background-color: transparent;
-  position: static;
-  max-width: 550px;
-  padding: 0 20px;
-  margin-top: 200px;
-}
-.carousel-caption h1,
-.carousel-caption .lead {
-  margin: 0;
-  line-height: 1.25;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-}
 
 
 /* MARKETING CONTENT
@@ -109,18 +95,6 @@ $purple: #61004D;
     width: auto;
     height: 500px;
   }
-
-  .featurette {
-    height: auto;
-    padding: 0;
-  }
-  .featurette-image.pull-left,
-  .featurette-image.pull-right {
-    display: block;
-    float: none;
-    max-width: 40%;
-    margin: 0 auto 20px;
-  }
 }
 
 
@@ -138,7 +112,7 @@ $purple: #61004D;
 
   }
   .carousel .item {
-    height: 300px;
+    height: 280px;
   }
   .carousel img {
     height: 300px;
@@ -154,18 +128,6 @@ $purple: #61004D;
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;
-  }
-
-  .marketing .span4 + .span4 {
-    margin-top: 40px;
-  }
-
-  .featurette-heading {
-    font-size: 30px;
-  }
-  .featurette .lead {
-    font-size: 18px;
-    line-height: 1.5;
   }
 
 }

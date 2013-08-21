@@ -3,10 +3,10 @@ nav.navbar-large
   = nav_link "Story", story_path
   = nav_link "Schedule", schedule_path
   li
-    img.img-responsive#bd-logo src='http://tyang.1.ai/images/bian-dang-logo.png' alt='Bian Dang NYC'
+    img.img-responsive.bd-logo src='/assets/bian-dang-logo-flat.png' alt='Bian Dang NYC'
   = nav_link "Catering & Events", schedule_path
   = nav_link "Contact", schedule_path
-  li.dropdown.nav-li
+  /li.dropdown.nav-li
     a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt <b class="caret"></b>
     ul.dropdown-menu
       li.dropdown-header Corporate
@@ -27,13 +27,14 @@ nav.navbar-large
 nav.navbar-small
   li.nav-li-small
     a href='/'
-      img.img-responsive#bd-logo-small src='http://tyang.1.ai/images/bian-dang-logo.png' alt='Bian Dang NYC'
+      img.img-responsive src='bian-dang-logo-flat.png' alt='Bian Dang NYC'
+  div.clearfix
   = nav_link_small "Menu", root_path
   = nav_link_small "Story", story_path
   = nav_link_small "Schedule", schedule_path
   = nav_link_small "Catering & Events", schedule_path
   = nav_link_small "Contact", schedule_path
-  li.dropdown.nav-li-small
+  /li.dropdown.nav-li-small
     a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt<b class="caret"></b>
     ul.dropdown-menu
       li.dropdown-header Corporate

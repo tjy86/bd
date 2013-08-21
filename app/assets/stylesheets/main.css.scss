@@ -3,8 +3,10 @@ $purple: #61004D;
 .clearfix{
   clear: both;
 }
-#bd-logo{
+.bd-logo{
   float: left;
+  max-height: 75px;
+  margin: 10px 10px;
 }
 #bd-small{
   display: block;
@@ -21,11 +23,10 @@ nav{
   }
   .nav-li{
     float: left;
-    padding: 20px 10px;
+    padding: 35px 10px;
     list-style-type: none;
     font-weight: bold;
     display: block;
-    border: 1px #000 dashed;
   }
   .nav-li-small{
     text-align: center;
@@ -33,11 +34,13 @@ nav{
     list-style-type: none;
     font-weight: bold;
     display: block;
-    border: 1px #000 dashed;
   }
   a{
     text-align: center;
     display: block;
+    &:active{
+      color: $purple;
+    }
   }
 }
 
@@ -51,4 +54,14 @@ nav{
 .panel-default .panel-heading{
   background-color: $purple;
   color: #eee;
+}
+
+footer{
+}
+
+p{
+  text-indent: 3em;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 1.5em 20px;
 }
