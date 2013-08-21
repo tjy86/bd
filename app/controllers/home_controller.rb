@@ -6,6 +6,8 @@ class HomeController < ApplicationController
   end
   def schedule
   end
+  def events
+  end
   def contact
   end
 end

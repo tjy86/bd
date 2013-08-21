@@ -5,8 +5,8 @@ nav.navbar-large
   = nav_link "Schedule", schedule_path
   li
     = image_tag 'bian-dang-logo-flat.png', class: "img-responsive bd-logo", alt: 'Bian Dang NYC'
-  = nav_link "Catering & Events", schedule_path
-  = nav_link "Contact", schedule_path
+  = nav_link "Catering & Events", events_path
+  = nav_link "Contact", contact_path
   /li.dropdown.nav-li
     a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt <b class="caret"></b>
     ul.dropdown-menu
@@ -28,13 +28,13 @@ nav.navbar-large
 nav.navbar-small
   li.nav-li-small
     a href='/'
-      img.img-responsive src='bian-dang-logo-flat.png' alt='Bian Dang NYC'
+      = image_tag 'bian-dang-logo-flat.png', class: "img-responsive", alt: 'Bian Dang NYC'
   div.clearfix
   = nav_link_small "Menu", root_path
   = nav_link_small "Story", story_path
   = nav_link_small "Schedule", schedule_path
-  = nav_link_small "Catering & Events", schedule_path
-  = nav_link_small "Contact", schedule_path
+  = nav_link_small "Catering & Events", events_path
+  = nav_link_small "Contact", contact_path
   /li.dropdown.nav-li-small
     a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt<b class="caret"></b>
     ul.dropdown-menu
