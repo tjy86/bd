@@ -4,4 +4,7 @@ Bd::Application.routes.draw do
   get 'schedule' => 'home#schedule'
   get 'events' => 'home#events'
   get 'contact' => 'home#contact'
+  get 'pickup' => 'order#pickup'
+  get 'soldout' => 'order#soldout'
+  get 'thankyou' => 'order#thankyou'
 end

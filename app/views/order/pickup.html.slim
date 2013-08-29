@@ -1,0 +1,31 @@
+.row
+  .col-md-12
+    .panel.panel-default
+      .panel-heading
+        h1 Pre-order (beta)
+      .panel-body
+        .col-md-5.col-md-offset-1
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="QR9MJNYEV5C96">
+          <table>
+          <tr><td><input type="hidden" name="on0" value="Item">Item</td></tr><tr><td><select name="os0">
+            <option value="Chicken on Rice">Chicken on Rice $7.00 USD</option>
+            <option value="Pork Chop on Rice">Pork Chop on Rice $7.00 USD</option>
+            <option value="Chicken on Rice and Dumplings">Chicken on Rice and Dumplings $10.00 USD</option>
+            <option value="Pork Chop on Rice and Dumplings">Pork Chop on Rice and Dumplings $10.00 USD</option>
+          </select> </td></tr>
+          <tr><td><input type="hidden" name="on1" value="Name for pickup">Name for pickup (required)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+          <tr><td><input type="hidden" name="on2" value="Mobile phone number">Mobile phone number (required)</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+          </table>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        .col-md-5
+          h4
+            | Please check our
+            a href='http://twitter.com/biandangnyc'  Twitter
+            |  to make sure we are within pick up distance and open for business before placing your order.
+          p
+          h4 We are not responsible for mistakes and misorders.
