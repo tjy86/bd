@@ -7,4 +7,5 @@ Bd::Application.routes.draw do
   get 'pickup' => 'order#pickup'
   get 'soldout' => 'order#soldout'
   get 'thankyou' => 'order#thankyou'
+  get 'closed' => 'order#closed'
 end
