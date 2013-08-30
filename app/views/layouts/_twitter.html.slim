@@ -2,4 +2,11 @@
   .panel-heading
     h3 Bian Dang's Twitter Feed
   .panel-body
-    | Work in progress
+    - bdtw = Twitter.user_timeline("biandangnyc")
+    - 0.upto(4) do |i|
+      .tweet
+        = " #{bdtw[i][:text]}"
+        .pull-right
+          br
+          = " #{bdtw[i][:created_at].strftime("%I:%M%p on %B %d")}"
+        .clearfix
