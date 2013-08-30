@@ -1,14 +1,9 @@
 .row
-  .col-md-12
+  .col-md-8
     .panel.panel-default
       .panel-heading
         h1 Preorders Closed
       .panel-body
-        p
-          | Sorry, preorders are only available between Monday to Friday, 8:00am and 1:00pm NY time.
-        p
-          = @o
-        p
-          = @e
-        p
-          = @n
+        h4 Sorry, preorders are only available between Monday to Friday, 8:00am and 1:00pm NY time.
+  .col-md-4
+    = render '/layouts/twitter'

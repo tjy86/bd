@@ -19,6 +19,7 @@ gem 'thin'
 gem 'rails_12factor'
 gem 'newrelic_rpm'
 gem 'mail_form'
+gem 'twitter'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]

@@ -9,7 +9,7 @@ class OrderController < ApplicationController
       @e = eightam
       @o = onepm
       @n = now
-      if now > eightam && now < onepm && Date.today.cwday >= 1 && Date.today.cwday <= 5
+      if true#now > eightam && now < onepm && Date.today.cwday >= 1 && Date.today.cwday <= 5
         render "pickup"
       else
         render "closed"
