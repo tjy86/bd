@@ -55,6 +55,18 @@ nav{
   background-color: $purple;
   color: #eee;
 }
+.menu-item{
+
+  float: left;
+  //border-bottom: solid $purple 2px;
+}
+.price{
+  float: right;
+}
+.item-desc{
+  padding: 0 10px;
+  margin-top: 0px;
+}
 
 footer{
 }
@@ -74,5 +86,4 @@ p{
   }
 }
 .tweet-time{
-
 }
