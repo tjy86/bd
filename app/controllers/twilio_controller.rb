@@ -13,7 +13,7 @@ class TwilioController < ApplicationController
     render :action => 'phone.xml.builder', :layout => false
   end
   def call
-    @post_to = 'http://www.biandangnyc.com/twilio-directions'
+    @post_to = 'http://www.biandangnyc.com/twilio_directions'
     @response = Twilio::TwiML::Response.new do |r|
       r.Say 'hello there', :voice => 'alice'
       r.Dial :callerId => '+14159992222' do |d|
@@ -22,7 +22,7 @@ class TwilioController < ApplicationController
     end
     render :action => 'call.html.slim', :layout => false
   end
-  def twilio-directions
+  def twilio_directions
     #test
   end
 end
