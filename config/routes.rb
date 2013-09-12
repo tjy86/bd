@@ -8,4 +8,7 @@ Bd::Application.routes.draw do
   get 'soldout' => 'order#soldout'
   get 'thankyou' => 'order#thankyou'
   get 'closed' => 'order#closed'
+  get 'phone' => 'twilio#phone'
+  get 'call' => 'twilio#call'
+  get 'twilio-directions' => 'twilio#twilio-directions'
 end
