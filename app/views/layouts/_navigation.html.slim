@@ -1,55 +1,20 @@
 
 nav.navbar-large
-  = nav_link "Menu", root_path
-  = nav_link "Story", story_path
-  = nav_link "Schedule", schedule_path
+  = nav_link "MENU", root_path
+  = nav_link "STORY", story_path
+  = nav_link "SCHEDULE", schedule_path
   li
     = image_tag 'bian-dang-logo-flat.png', class: "img-responsive bd-logo", alt: 'Bian Dang NYC'
-  = nav_link "Catering & Events", events_path
-  = nav_link "Contact", contact_path
-  /li.dropdown.nav-li
-    a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt <b class="caret"></b>
-    ul.dropdown-menu
-      li.dropdown-header Corporate
-      li
-        a href="/" LUCKmgmt
-      li.divider
-      li.dropdown-header Concepts
-      li
-        a href="/" Moo Shu Grill
-      li
-        a href="/" Domo Taco
-      li
-        a href="/" Fishing Shrimp
-      li.divider
-      li.dropdown-header Venues
-      li
-        a href="/" DUMBO Lot
+  = nav_link "CATERING", events_path
+  = nav_link "CONTACT", contact_path
+
 nav.navbar-small
   li.nav-li-small
     a href='/'
       = image_tag 'bian-dang-logo-flat.png', class: "img-responsive", alt: 'Bian Dang NYC'
   div.clearfix
-  = nav_link_small "Menu", root_path
-  = nav_link_small "Story", story_path
-  = nav_link_small "Schedule", schedule_path
-  = nav_link_small "Catering & Events", events_path
-  = nav_link_small "Contact", contact_path
-  /li.dropdown.nav-li-small
-    a.dropdown-toggle href="#" data-toggle="dropdown" LUCKmgmt<b class="caret"></b>
-    ul.dropdown-menu
-      li.dropdown-header Corporate
-      li
-        a href="/" LUCKmgmt
-      li.divider
-      li.dropdown-header Concepts
-      li
-        a href="/" Moo Shu Grill
-      li
-        a href="/" Domo Taco
-      li
-        a href="/" Fishing Shrimp
-      li.divider
-      li.dropdown-header Venues
-      li
-        a href="/" DUMBO Lot
+  = nav_link_small "MENU", root_path
+  = nav_link_small "STORY", story_path
+  = nav_link_small "SCHEDULE", schedule_path
+  = nav_link_small "CATERING & EVENTS", events_path
+  = nav_link_small "CONTACT", contact_path

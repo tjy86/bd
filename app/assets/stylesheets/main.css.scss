@@ -17,9 +17,17 @@ $purple: #61004D;
   margin: auto;
 }
 
+p, .item-desc{
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Domine', serif;
+}
 nav{
   li{
     list-style-type: none;
+    font-family: 'Domine', serif;
   }
   .nav-li{
     float: left;
@@ -51,9 +59,15 @@ nav{
 
 //menu
 
-.panel-default .panel-heading{
-  background-color: $purple;
-  color: #eee;
+.panel-default{
+  border: none;
+}
+.panel-default > .panel-heading{
+  border-color: transparent;
+  border: none;
+  border-bottom: 10px #61004d solid;
+  color: #61004d;
+  background-color: transparent;
 }
 .menu-item{
 
