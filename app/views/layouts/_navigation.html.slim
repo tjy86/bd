@@ -1,8 +1,6 @@
-
 nav.navbar-large
   = nav_link "MENU", root_path
   = nav_link "STORY", story_path
-  = nav_link "SCHEDULE", schedule_path
   li
     = image_tag 'bian-dang-logo-flat.png', class: "img-responsive bd-logo", alt: 'Bian Dang NYC'
   = nav_link "CATERING", events_path
@@ -15,6 +13,5 @@ nav.navbar-small
   div.clearfix
   = nav_link_small "MENU", root_path
   = nav_link_small "STORY", story_path
-  = nav_link_small "SCHEDULE", schedule_path
   = nav_link_small "CATERING & EVENTS", events_path
   = nav_link_small "CONTACT", contact_path

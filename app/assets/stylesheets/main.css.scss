@@ -1,4 +1,5 @@
 $purple: #61004D;
+
 // Nav
 .clearfix{
   clear: both;
@@ -13,34 +14,32 @@ $purple: #61004D;
 }
 
 .navbar-large{
-  width: 710px;
+  width: 572px;
   margin: auto;
 }
 
 p, .item-desc{
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4{
-  font-family: 'Domine', serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 nav{
   li{
     list-style-type: none;
-    font-family: 'Domine', serif;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   .nav-li{
     float: left;
     padding: 35px 10px;
     list-style-type: none;
-    font-weight: bold;
     display: block;
   }
   .nav-li-small{
     text-align: center;
     padding: 10px 10px;
     list-style-type: none;
-    font-weight: bold;
     display: block;
   }
   a{
@@ -82,9 +81,6 @@ nav{
   margin-top: 0px;
 }
 
-footer{
-}
-
 p{
   text-indent: 3em;
   font-size: 18px;
@@ -93,11 +89,13 @@ p{
 }
 
 .tweet{
-  border-bottom: 1px black solid;
   padding: 10px 0px;
-  &:last-child{
-    border-bottom: none;
-  }
 }
-.tweet-time{
+.bottom{
+  padding: 0 40px;
+}
+footer, .footer{
+  min-height: 20px;
+  background: $purple;
+  color: #eee;
 }
