@@ -17,7 +17,7 @@ html
       .container
         = yield
       .row.footer
-        .col-md-5.col-md-offset-1.bottom
+        .col-md-3.col-md-offset-1.bottom
           h1 Tweets
           - bdtw = Twitter.user_timeline("biandangnyc")
           - 0.upto(2) do |i|
@@ -27,13 +27,19 @@ html
                 br
                 = " #{bdtw[i][:created_at].strftime("%I:%M%p on %B %d")}"
               .clearfix
-        .col-md-5.bottom
+        .col-md-4.bottom
           h1 Location
           .location 53rd Street between Park and Lexington Avenue
           .location New York, NY 10022
           .location Monday to Friday, 11:30am to 2:30pm
           .location Weekends and Holidays, please check our <a href='http://twitter.com/biandangnyc'>Twitter</a> feed
           .location +1 (212) 695-5995
+        .col-md-3.bottom
+          h1 Eat. Like? Follow!
+          a href='http://twitter.com/biandangnyc'
+            .twitter-roll
+          a href='http://facebook.com/biandang'
+            .facebook-roll
       .footer
         .col-md-10.col-md-offset-1.footer
           span &copy; 2013
