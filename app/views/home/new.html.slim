@@ -1,13 +1,26 @@
+<script src="//cdn.sq-api.com/market/embed.js" charset="utf-8"></script>
+
 - if @n > @e && @n < @o && Date.today.cwday >= 1 && Date.today.cwday <= 5
   .row
-    .col-md-6.col-md-offset-3
-      .panel.panel-default
-        .panel-heading
-          h1 Pre-orders now available!
-        .panel-body
-          p
-            a href='/pickup' Click here to pre-order
-            |  (beta)
+    .col-md-2.col-md-offset-3
+      a href='https://squareup.com/market/bian-dang/' target='_blank'
+          button.btn.btn-info.btn-large Order Here
+      h4 Pick Up Orders
+      ' 8:00am to 1:00pm
+    .col-md-4
+      ul
+        li
+          ' Include
+          strong name
+          '  and
+          strong phone number
+          '  in order
+        li Pick-up by 2:00pm
+        li Pick-ups can be made at the back of truck
+        li
+          'Please check our
+          a href='http://twitter.com/biandangnyc' target='_blank' Twitter
+          '  prior to pick up
 .row
   .col-md-6
     .panel.panel-default
