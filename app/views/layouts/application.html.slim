@@ -2,8 +2,8 @@ doctype html
 html
   head
     meta content="width=device-width, initial-scale=1.0" name="viewport"
-      title= content_for?(:title) ? yield(:title) : "Bian Dang NYC"
-      meta content=(content_for?(:description) ? yield(:description) : "Bian Dang NYC") name="description"
+      title= content_for?(:title) ? yield(:title) : "Bian Dang - New York City's Gourmet Taiwanese Food Truck"
+      meta content=(content_for?(:description) ? yield(:description) : "Bian Dang") name="description"
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags
@@ -55,7 +55,7 @@ javascript:
 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
