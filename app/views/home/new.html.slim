@@ -1,7 +1,7 @@
 .row
   .col-md-2
     - if @n > @e && @n < @o && Date.today.cwday >= 1 && Date.today.cwday <= 5
-      a href='https://squareup.com/market/bian-dang/' target='_blank'
+      a href='https://squareup.com/market/bian-dang/' target='_blank' onClick="_gaq.push(['_trackEvent', 'Affiliate Link', 'Order', 'Online Order',, false]);"
           button.btn.btn-info.btn-large Order Here
     - else
       button.btn.btn-info.btn-large.disabled Currently Closed
@@ -21,7 +21,7 @@
       li Pick-ups can be made at the back of truck
       li
         ' Check our
-        a href='http://twitter.com/biandangnyc' target='_blank' Twitter
+        a href='http://twitter.com/biandangnyc' Twitter
         '  prior to pick up
 
   .col-md-5
