@@ -1,7 +1,7 @@
 .row
   .col-md-2
     - if @n > @e && @n < @o && Date.today.cwday >= 1 && Date.today.cwday <= 5
-      a href='https://squareup.com/market/bian-dang/' target='_blank' onClick="_gaq.push(['_trackEvent', 'Affiliate Link', 'Order', 'Online Order',, false]);"
+      a href='https://squareup.com/market/bian-dang/' target='_blank' onClick="ga('send', 'Affiliate Link', 'Order', 'Online Order');"
           button.btn.btn-info.btn-large Order Here
     - else
       button.btn.btn-info.btn-large.disabled Currently Closed
